@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fontanería Terrón - Expertos en instalaciones, mantenimiento y reparaciones. Calderas, aire acondicionado, suelo radiante, aerotermia en Plasencia.">
+    <meta name="keywords" content="fontanería, calderas, aire acondicionado, suelo radiante, aerotermia, Plasencia">
+    <meta name="author" content="Fontanería Terrón">
+    <title>Fontanería Terrón | Expertos en Instalaciones y Mantenimiento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-wrench"></i>
+                <span class="logo-text">Fontanería Terrón</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#cita" class="nav-link cta-link">Solicitar Cita</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BOTÓN FLOTANTE DE LLAMADA -->
+    <a href="tel:927470000" class="floating-call-btn" title="Llamar ahora">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/34627123456" class="floating-whatsapp" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- HOME / HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Expertos en Fontanería, Calefacción y Climatización</h1>
+            <p class="hero-subtitle">Más de 20 años cuidando el confort de tu hogar en Plasencia</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('cita')">
+                    <i class="fas fa-calendar-check"></i> Solicitar Cita
+                </button>
+                <button class="btn btn-secondary" onclick="document.location.href='tel:927470000'">
+                    <i class="fas fa-phone"></i> Llamar Ahora
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <p>Clientes Satisfechos</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="20">0</h3>
+                    <p>Años Experiencia</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="24">0</h3>
+                    <p>Disponibilidad (h)</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS PRINCIPALES -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Soluciones integrales para tu hogar</p>
+
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Calderas</h3>
+                    <p>Instalación, reparación y mantenimiento de calderas de última tecnología</p>
+                    <a href="#servicios-detallados" class="card-link">Ver detalles →</a>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Aire Acondicionado</h3>
+                    <p>Sistemas de climatización eficientes para tu confort todo el año</p>
+                    <a href="#servicios-detallados" class="card-link">Ver detalles →</a>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Suelo Radiante</h3>
+                    <p>Calefacción homogénea y cómoda bajo tus pies con máxima eficiencia</p>
+                    <a href="#servicios-detallados" class="card-link">Ver detalles →</a>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Aerotermia</h3>
+                    <p>Tecnología sostenible que aprovecha el aire para calentar y enfriar</p>
+                    <a href="#servicios-detallados" class="card-link">Ver detalles →</a>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-pipe"></i>
+                    </div>
+                    <h3>Fontanería General</h3>
+                    <p>Reparación de fugas, cambio de tuberías y todas tus necesidades</p>
+                    <a href="#servicios-detallados" class="card-link">Ver detalles →</a>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Mantenimiento</h3>
+                    <p>Revisiones periódicas y mantenimiento preventivo de todas tus instalaciones</p>
+                    <a href="#servicios-detallados" class="card-link">Ver detalles →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS DETALLADOS -->
+    <section class="servicios-detallados" id="servicios-detallados">
+        <div class="container">
+            <h2 class="section-title">Servicios en Profundidad</h2>
+            
+            <!-- CALDERAS -->
+            <div class="servicio-detalle">
+                <div class="servicio-detalle-content">
+                    <h3>Instalación de Calderas</h3>
+                    <p>Ofrecemos las mejores marcas del mercado con garantía de 5 años. Nuestros técnicos certificados instalan calderas de gas, gasoil y combinadas.</p>
+                    <h4>Beneficios:</h4>
+                    <ul class="benefits-list">
+                        <li>💰 Ahorro de hasta 30% en calefacción</li>
+                        <li>🔧 Instalación profesional y rápida</li>
+                        <li>📋 Documentación y garantía completa</li>
+                        <li>🛡️ Mantenimiento anual incluido primer año</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="scrollToSection('cita')">Solicitar Presupuesto</button>
+                </div>
+                <div class="servicio-detalle-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AIRE ACONDICIONADO -->
+            <div class="servicio-detalle alternado">
+                <div class="servicio-detalle-content">
+                    <h3>Aire Acondicionado</h3>
+                    <p>Sistemas de climatización inverter de bajo consumo energético. Instalación de splits, multisplits y aires centralizados.</p>
+                    <h4>Beneficios:</h4>
+                    <ul class="benefits-list">
+                        <li>❄️ Eficiencia energética de clase A+++</li>
+                        <li>🔇 Funcionamiento silencioso</li>
+                        <li>📱 Control remoto y por app</li>
+                        <li>🌱 Ecológico y respetuoso con el medio ambiente</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="scrollToSection('cita')">Solicitar Presupuesto</button>
+                </div>
+                <div class="servicio-detalle-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUELO RADIANTE -->
+            <div class="servicio-detalle">
+                <div class="servicio-detalle-content">
+                    <h3>Suelo Radiante</h3>
+                    <p>Calefacción invisible y distribuida homogéneamente bajo todo el espacio. Perfecto para renovaciones y construcciones nuevas.</p>
+                    <h4>Beneficios:</h4>
+                    <ul class="benefits-list">
+                        <li>🏡 Distribuye calor de forma uniforme</li>
+                        <li>⚡ 15-20% más eficiente que radiadores</li>
+                        <li>🛋️ Máxima libertad en decoración (sin radiadores)</li>
+                        <li>🧘 Confort extremo y saludable</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="scrollToSection('cita')">Solicitar Presupuesto</button>
+                </div>
+                <div class="servicio-detalle-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-water"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AEROTERMIA -->
+            <div class="servicio-detalle alternado">
+                <div class="servicio-detalle-content">
+                    <h3>Aerotermia</h3>
+                    <p>Bomba de calor air-to-water de última generación. Extrae energía del aire para calefacción, refrigeración y agua caliente.</p>
+                    <h4>Beneficios:</h4>
+                    <ul class="benefits-list">
+                        <li>🌍 Energía renovable 100% gratuita</li>
+                        <li>💚 Reducción de CO₂ hasta 75%</li>
+                        <li>💵 Ahorro de 50-70% en consumo energético</li>
+                        <li>⭐ Subvenciones disponibles en muchos casos</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="scrollToSection('cita')">Solicitar Presupuesto</button>
+                </div>
+                <div class="servicio-detalle-image">
+                    <div class="placeholder-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FONTANERÍA Y MANTENIMIENTO -->
+    <section class="calefaccion">
+        <div class="container">
+            <h2 class="section-title">Fontanería General y Mantenimiento</h2>
+            
+            <div class="grid-2">
+                <div class="card-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-pipe"></i>
+                    </div>
+                    <h3>Fontanería General</h3>
+                    <ul class="feature-list">
+                        <li>✓ Reparación de fugas y goteos</li>
+                        <li>✓ Cambio de tuberías (cobre, PVC, multicapa)</li>
+                        <li>✓ Instalación de grifería</li>
+                        <li>✓ Desatascos de tuberías</li>
+                        <li>✓ Revisión de presión</li>
+                    </ul>
+                </div>
+
+                <div class="card-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Mantenimiento Preventivo</h3>
+                    <ul class="feature-list">
+                        <li>✓ Revisión anual de calderas</li>
+                        <li>✓ Deshollinado de chimeneas</li>
+                        <li>✓ Limpieza de circuitos</li>
+                        <li>✓ Cambio de filtros</li>
+                        <li>✓ Purgas y purgadores</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-gas-pump"></i>
+                    </div>
+                    <h3>Instalaciones de Gas</h3>
+                    <ul class="feature-list">
+                        <li>✓ Instalación de reguladores</li>
+                        <li>✓ Reparación de tuberías gas</li>
+                        <li>✓ Inspección técnica de gas (ITV)</li>
+                        <li>✓ Certificado de conformidad</li>
+                        <li>✓ Cambio a nuevas normativas</li>
+                    </ul>
+                </div>
+
+                <div class="card-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificaciones y Garantías</h3>
+                    <ul class="feature-list">
+                        <li>✓ Técnicos certificados y cualificados</li>
+                        <li>✓ Todas las licencias en regla</li>
+                        <li>✓ Garantía en todas las instalaciones</li>
+                        <li>✓ Facturación profesional</li>
+                        <li>✓ Disponibilidad 24/7 emergencias</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPINIONES DE CLIENTES -->
+    <section class="opiniones" id="opiniones">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            
+            <div class="opiniones-grid">
+                <div class="opinion-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="opinion-text">"Profesionales de verdad. Instalaron mi caldera en un día y explicaron todo perfectamente. Muy recomendables."</p>
+                    <p class="opinion-author">- Javier M. (Plasencia)</p>
+                </div>
+
+                <div class="opinion-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="opinion-text">"Llamé por una fuga urgente y vinieron en menos de una hora. Problema resuelto rápidamente. ¡Gracias!"</p>
+                    <p class="opinion-author">- María L. (Plasencia)</p>
+                </div>
+
+                <div class="opinion-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="opinion-text">"El presupuesto fue honesto y sin sorpresas. La instalación del aire acondicionado quedó perfecta. Muy satisfecho."</p>
+                    <p class="opinion-author">- Carlos R. (Navezuelas)</p>
+                </div>
+
+                <div class="opinion-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="opinion-text">"Profesionalidad de principio a fin. Mi suelo radiante funciona de maravilla. Muy contento con el resultado."</p>
+                    <p class="opinion-author">- Rosa G. (Robledillo de Trujillo)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZONA DE SERVICIO -->
+    <section class="zona-servicio" id="zona-servicio">
+        <div class="container">
+            <h2 class="section-title">Nuestra Zona de Servicio</h2>
+            <p class="section-subtitle">Operamos en Plasencia y zona de influencia</p>
+
+            <div class="zona-content">
+                <div class="zona-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.9835297285497!2d-6.096428!3d40.095233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd414c3f7c3f7c3f%3A0x0!2sPlasencia!5e0!3m2!1ses!2ses!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="zona-municipios">
+                    <h3>Municipios de Servicio</h3>
+                    <div class="municipios-grid">
+                        <div class="municipio">
+                            <i class="fas fa-map-pin"></i>
+                            <span>Plasencia</span>
+                        </div>
+                        <div class="municipio">
+                            <i class="fas fa-map-pin"></i>
+                            <span>Navezuelas</span>
+                        </div>
+                        <div class="municipio">
+                            <i class="fas fa-map-pin"></i>
+                            <span>Robledillo de Trujillo</span>
+                        </div>
+                        <div class="municipio">
+                            <i class="fas fa-map-pin"></i>
+                            <span>Viandar de la Vera</span>
+                        </div>
+                        <div class="municipio">
+                            <i class="fas fa-map-pin"></i>
+                            <span>Cabezuela del Valle</span>
+                        </div>
+                        <div class="municipio">
+                            <i class="fas fa-map-pin"></i>
+                            <span>Jarandilla de la Vera</span>
+                        </div>
+                    </div>
+                    <p class="zona-note">Disponemos de servicio de emergencia 24/7 en toda la zona. Consulta por zonas no listadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="sobre-nosotros" id="sobre-nosotros">
+        <div class="container">
+            <h2 class="section-title">Sobre Fontanería Terrón</h2>
+
+            <div class="sobre-grid">
+                <div class="sobre-content">
+                    <h3>Nuestra Historia</h3>
+                    <p>Desde 2004, Fontanería Terrón ha estado al servicio de los hogares y empresas de Plasencia. Lo que comenzó como un pequeño taller se ha convertido en la referencia local en instalaciones de fontanería, calefacción y climatización.</p>
+                    <p>Nuestro compromiso es ofrecer soluciones de calidad, con profesionales certificados y materiales de primera categoría.</p>
+                </div>
+
+                <div class="valores-grid">
+                    <div class="valor">
+                        <div class="valor-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Profesionalidad</h4>
+                        <p>Técnicos certificados y cualificados</p>
+                    </div>
+                    <div class="valor">
+                        <div class="valor-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Rapidez</h4>
+                        <p>Atención urgente en emergencias</p>
+                    </div>
+                    <div class="valor">
+                        <div class="valor-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Confianza</h4>
+                        <p>Trabajos garantizados y honestos</p>
+                    </div>
+                    <div class="valor">
+                        <div class="valor-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Sostenibilidad</h4>
+                        <p>Soluciones ecológicas y eficientes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="por-que-elegirnos">
+                <h3>Por Qué Elegirnos</h3>
+                <div class="razones-grid">
+                    <div class="razon">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Más de 20 años en el sector</h4>
+                    </div>
+                    <div class="razon">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Técnicos con experiencia y certificados</h4>
+                    </div>
+                    <div class="razon">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Garantía en todas nuestras instalaciones</h4>
+                    </div>
+                    <div class="razon">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Disponibilidad 24/7 para emergencias</h4>
+                    </div>
+                    <div class="razon">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Presupuestos transparentes sin sorpresas</h4>
+                    </div>
+                    <div class="razon">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Servicio atento y profesional</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CITA -->
+    <section class="cita" id="cita">
+        <div class="container">
+            <h2 class="section-title">Solicita tu Cita</h2>
+            <p class="section-subtitle">Te llamaremos en la franja horaria solicitada</p>
+
+            <form class="cita-form" id="citaForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Tu teléfono (9 dígitos)">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email (opcional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Servicio Requerido *</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">-- Selecciona un servicio --</option>
+                        <option value="calderas">Calderas</option>
+                        <option value="aire-acondicionado">Aire Acondicionado</option>
+                        <option value="suelo-radiante">Suelo Radiante</option>
+                        <option value="aerotermia">Aerotermia</option>
+                        <option value="fontaneria">Fontanería General</option>
+                        <option value="mantenimiento">Mantenimiento</option>
+                        <option value="emergencia">Emergencia (urgente)</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="horario">Franja Horaria Preferida *</label>
+                    <select id="horario" name="horario" required>
+                        <option value="">-- Selecciona una franja --</option>
+                        <option value="8-10">08:00 - 10:00</option>
+                        <option value="10-12">10:00 - 12:00</option>
+                        <option value="12-14">12:00 - 14:00</option>
+                        <option value="16-18">16:00 - 18:00</option>
+                        <option value="18-20">18:00 - 20:00</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Comentarios (opcional)</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos más sobre tu necesidad..."></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="politica" name="politica" required>
+                    <label for="politica">Acepto ser contactado por teléfono o email</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Solicitar Cita</button>
+                <p class="form-info">*Campos obligatorios. Nos pondremos en contacto dentro de 24 horas.</p>
+            </form>
+
+            <div class="success-message" id="successMessage" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <h3>¡Cita Solicitada!</h3>
+                <p>Te llamaremos pronto. Gracias por confiar en nosotros.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacta Con Nosotros</h2>
+
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Teléfono</h4>
+                            <a href="tel:927470000">927 47 00 00</a>
+                            <p class="info-note">Llamadas de lunes a viernes, 8:00 - 20:00</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/34627123456" target="_blank">627 12 34 56</a>
+                            <p class="info-note">Disponible 24/7 para mensajes urgentes</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:info@fontaneriaterron.es">info@fontaneriaterron.es</a>
+                            <p class="info-note">Responderemos en máximo 24 horas</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Ubicación</h4>
+                            <p>Calle Principal, 42<br>10600 Plasencia (Cáceres)</p>
+                            <p class="info-note">Zona de servicio: Plasencia y alrededores</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacto-horario">
+                    <h3>Horario de Atención</h3>
+                    <div class="horario-table">
+                        <div class="horario-row">
+                            <span>Lunes - Viernes</span>
+                            <strong>08:00 - 20:00</strong>
+                        </div>
+                        <div class="horario-row">
+                            <span>Sábados</span>
+                            <strong>09:00 - 14:00</strong>
+                        </div>
+                        <div class="horario-row">
+                            <span>Domingos y festivos</span>
+                            <strong>Emergencias 24h</strong>
+                        </div>
+                    </div>
+                    <div class="disponibilidad-banner">
+                        <i class="fas fa-bell"></i>
+                        <p><strong>¿Emergencia?</strong> Llámanos en cualquier momento. Disponibles 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fontanería Terrón</h4>
+                    <p>Expertos en instalaciones y mantenimiento de fontanería, calefacción y climatización en Plasencia.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/34627123456" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Calderas</a></li>
+                        <li><a href="#servicios">Aire Acondicionado</a></li>
+                        <li><a href="#servicios">Suelo Radiante</a></li>
+                        <li><a href="#servicios">Aerotermia</a></li>
+                        <li><a href="#servicios">Fontanería</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Información Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 Fontanería Terrón. Todos los derechos reservados.</p>
+                <p>Plasencia (Cáceres) | CIF: A99999999</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
