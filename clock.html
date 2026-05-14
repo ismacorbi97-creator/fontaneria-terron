@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital World Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="clock-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <h1><i class="fas fa-globe"></i> World Clock</h1>
+        <p>Track time across the globe in real-time</p>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search time zones..."
+                autocomplete="off"
+            >
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="btn-group">
+            <button class="btn" id="addZoneBtn">
+                <i class="fas fa-plus"></i> Add Time Zone
+            </button>
+        </div>
+    </div>
+
+    <!-- QUICK ADD ZONES -->
+    <div class="quick-add-zones">
+        <button class="zone-btn" data-zone="America/New_York">🗽 New York</button>
+        <button class="zone-btn" data-zone="Europe/London">🇬🇧 London</button>
+        <button class="zone-btn" data-zone="Europe/Paris">🇫🇷 Paris</button>
+        <button class="zone-btn" data-zone="Asia/Tokyo">🇯🇵 Tokyo</button>
+        <button class="zone-btn" data-zone="Australia/Sydney">🇦🇺 Sydney</button>
+        <button class="zone-btn" data-zone="Asia/Dubai">🇦🇪 Dubai</button>
+        <button class="zone-btn" data-zone="Asia/Singapore">🇸🇬 Singapore</button>
+        <button class="zone-btn" data-zone="Asia/Hong_Kong">🇭🇰 Hong Kong</button>
+        <button class="zone-btn" data-zone="America/Los_Angeles">🌴 Los Angeles</button>
+        <button class="zone-btn" data-zone="Europe/Berlin">🇩🇪 Berlin</button>
+    </div>
+
+    <!-- CLOCKS GRID -->
+    <div class="clocks-grid" id="clocksGrid">
+        <div class="empty-state">
+            <i class="fas fa-clock"></i>
+            <p>No time zones added yet</p>
+            <small>Click "Add Time Zone" or use the Quick Add buttons to get started</small>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Select Time Zone</h2>
+                <button class="close-modal" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <input 
+                type="text" 
+                class="modal-search" 
+                id="modalSearch" 
+                placeholder="Search time zones..."
+                autocomplete="off"
+            >
+            <div class="timezone-list" id="timezoneList"></div>
+        </div>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
